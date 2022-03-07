@@ -1,0 +1,15 @@
+version: "3.7"
+services:
+    dagster_pod:
+        restart: on-failure
+        build:
+            context: .
+            dockerfile: Dockerfile
+            args:
+                PYTHON_VERSION: ${PYHTON_VERSION}
+                REQ_FILE: ${REQ_FILE}
+                DAGSTER_HOME: ${DAGSTER_HOME}
+        ports:
+            - 3000:3000
+        volumes:
+            - ./:${DAGSTER_HOME}

@@ -1,0 +1,9 @@
+numpy
+pandas
+pandas-profiling
+s3fs
+fsspec
+httpcore
+dataclasses
+psycopg2==2.9.3
+sqlalchemy==1.4.31

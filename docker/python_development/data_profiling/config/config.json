@@ -1,0 +1,34 @@
+{
+    "default_dataset_metadata" : {
+        "processed_id" : "id",
+        "start_time" : "min",
+        "end_time" : "max" ,
+        "type_of_data" : "file_type",
+        "process_type" : "manually/pipeline/custom",
+        "file_name" : "name",
+        "processed_time" : "timestamp"
+    },
+    "dataset_matadata" : {
+        "number_of_attributes" : "n_var",
+        "number_of_observations" : "n",
+        "missing_cells_percentage" : "p_cells_missing",
+        "duplicate_rows_percentage" : "p_duplicates",
+        "total_size_in_memory" : "memory_size"
+    },
+    "default_attributes_metadata" :{
+        "processed_id" : "id",
+        "attribute_name" : "name",
+        "type_of_attribute" : "type",
+        "processed_time" : "timestamp"
+    },
+    "attributes_metadata" : {
+        "distinct_percentage": "p_distinct",
+        "missing_percentage" : "p_missing",
+        "unique_percentage" : "p_unique",
+        "negative_percentage" : "p_negative",
+        "zeros_percentage" : "p_zeros",
+        "mean" : "mean",
+        "min" : "min",
+        "max" : "max"
+    }
+}

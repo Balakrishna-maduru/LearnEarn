@@ -1,0 +1,7 @@
+BUCKET_SIZE: 2
+DB_DETAILS: 
+  hostname: 192.168.1.7
+  user: postgres
+  password: password
+  port: 5432
+  database_name: postgres

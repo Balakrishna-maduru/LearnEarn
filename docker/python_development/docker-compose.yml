@@ -1,0 +1,13 @@
+version: "3.7"
+services:
+    python_app:
+        restart: on-failure
+        build:
+            context: .
+            dockerfile: Dockerfile
+            args:
+                PYTHON_VERSION: ${PYHTON_VERSION}
+                APP_DIR: ${APP_DIR}
+                REQ_FILE: ${REQ_FILE}
+        volumes:
+            - ./${SRC_PATH}/:${APP_DIR}
